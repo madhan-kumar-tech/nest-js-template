@@ -1,23 +1,70 @@
-# NestJS Template
+🚀 NestJS Project Template
 
-A scalable, modular NestJS project template with JWT auth, PostgreSQL, TypeORM, validation, logging, and testing.
+A clean, scalable, and production-ready NestJS + PostgreSQL + TypeORM + JWT Authentication template with modular architecture, environment-based config, migrations, logging, validation, and Swagger documentation.
 
-## Getting Started
+This template is ideal for quickly bootstrapping backend services, microservices, dashboards, admin panels, and enterprise APIs.
 
-1. Copy `.env.example` to `.env` and fill in your secrets.
-2. Install dependencies: `npm install`
-3. Run migrations: `npm run migration:run`
-4. Start dev server: `npm run start:dev`
-5. API docs: http://localhost:3000/docs
+📦 Features
+✅ Core Setup
 
-## Extending
+NestJS 10 (latest)
 
-- Add new modules in `src/modules/`
-- Use `@nestjs/config` for typed config
-- Use `class-validator` for DTO validation
-- Use `LoggerService` for custom logging
+TypeScript 5
 
-## Testing
+pnpm package manager
 
-- Unit: `npm test`
-- E2E: `npm run test:e2e`
+Centralized configuration
+
+.env validation using Joi
+
+Fully modular folder structure
+
+🗄 Database (PostgreSQL + TypeORM)
+
+TypeORM 0.3
+
+CLI-based migrations
+
+datasource.ts + Nest runtime config
+
+Auto-load entities
+
+Production-ready DB configuration
+
+🔐 Authentication
+
+JWT Access + Refresh tokens
+
+Passport strategies
+
+Modular AuthModule structure
+
+Guards, strategies, decorators included
+
+🧰 Utilities
+
+Global ValidationPipe
+
+API response transformer
+
+Logging interceptor
+
+Error handling filter
+
+Timezone support (Asia/Kolkata default)
+
+📚 API Documentation
+
+Swagger/OpenAPI 3
+
+UI at: /docs
+
+Bearer Authentication enabled
+
+🧪 Testing
+
+Jest
+
+e2e tests with Supertest
+
+Configurable testing environment
